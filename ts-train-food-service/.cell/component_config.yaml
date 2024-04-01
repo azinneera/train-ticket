@@ -1,0 +1,14 @@
+apiVersion: v1alpha1
+kind: ComponentConfig
+metadata:
+  name: ts-train-food-service
+  projectName: train-ticket
+  annotations:
+    componentType: service
+spec:
+  inbound:
+  - name: ts-train-food-service
+    port: 9095
+    type: REST
+    visibility: Organization
+    context: /
