@@ -1,0 +1,19 @@
+apiVersion: v1alpha1
+kind: ComponentConfig
+metadata:
+  name: ts-order-service
+  projectName: train-ticket
+  annotations:
+    componentType: service
+spec:
+  inbound:
+  - name: ts-order-service
+    port: 9095
+    type: REST
+    visibility: Organization
+    context: /
+  outbound:
+    serviceReferences:
+    - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-preserve-other-service/public
+      dependentConfig: config-1
+      connectionType: service  
