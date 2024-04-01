@@ -1,0 +1,14 @@
+apiVersion: v1alpha1
+kind: ComponentConfig
+metadata:
+  name: ts-config-service
+  projectName: train-ticket
+  annotations:
+    componentType: service
+spec:
+  inbound:
+  - name: ts-config-service
+    port: 9095
+    type: REST
+    visibility: Organization
+    context: /

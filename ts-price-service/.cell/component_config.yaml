@@ -1,0 +1,34 @@
+apiVersion: v1alpha1
+kind: ComponentConfig
+metadata:
+  name: ts-price-service
+  projectName: train-ticket
+  annotations:
+    componentType: service
+spec:
+  inbound:
+  - name: ts-price-service
+    port: 9095
+    type: REST
+    visibility: Organization
+    context: /
+  # outbound:
+  #   serviceReferences:
+  #   - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-user-service/public
+  #     dependentConfig: config-1
+  #     connectionType: service 
+  #   - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-food-service/public
+  #     dependentConfig: config-2
+  #     connectionType: service
+  #   - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-security-service/public
+  #     dependentConfig: config-1
+  #     connectionType: service 
+  #   - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-consign-service/public
+  #     dependentConfig: config-2
+  #     connectionType: service   
+  #   - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-contacts-service/public
+  #     dependentConfig: config-1
+  #     connectionType: service 
+  #   - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-assurance-service/public
+  #     dependentConfig: config-2
+  #     connectionType: service   
