@@ -1,0 +1,32 @@
+name: Architecture Conformance Check
+
+on: 
+  workflow_dispatch:
+  pull_request:
+    branches:
+     - research
+
+jobs:
+  architecture-conformance-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Download ArchCheck
+      uses: actions/download-artifact@v4
+      with:
+        name: ArchCheckZip
+        path: archcheck-1.0-SNAPSHOT
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        repository: azinneera/archcheck
+        run-id: 8512305636
+
+    - name: Extract Distribution
+      working-directory: archcheck-1.0-SNAPSHOT
+      run: unzip archcheck-1.0-SNAPSHOT.zip
+        
+    - name: Run Conformance Check
+      working-directory: archcheck-1.0-SNAPSHOT
+      run: ./archcheck --intended ../docs/architecture.drawio --modified .
+        
