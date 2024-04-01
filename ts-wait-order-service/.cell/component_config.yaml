@@ -1,13 +1,13 @@
 apiVersion: v1alpha1
 kind: ComponentConfig
 metadata:
-  name: ts-order-service
+  name: ts-wait-order-service
   projectName: train-ticket
   annotations:
     componentType: service
 spec:
   inbound:
-  - name: ts-order-service
+  - name: ts-wait-order-service
     port: 9095
     type: REST
     visibility: Organization
