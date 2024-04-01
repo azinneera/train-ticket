@@ -36,8 +36,11 @@ spec:
       dependentConfig: config-7
       connectionType: service   
     - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-travel2-service/public
-      dependentConfig: config-7
+      dependentConfig: config-8
       connectionType: service  
     - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-seat-service/public
-      dependentConfig: config-7
+      dependentConfig: config-9
+      connectionType: service 
+    - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-order-other-service/public
+      dependentConfig: config-9
       connectionType: service 
