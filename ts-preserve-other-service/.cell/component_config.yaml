@@ -26,3 +26,9 @@ spec:
     - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-consign-service/public
       dependentConfig: config-2
       connectionType: service   
+    - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-contacts-service/public
+      dependentConfig: config-1
+      connectionType: service 
+    - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-assurance-service/public
+      dependentConfig: config-2
+      connectionType: service   

@@ -1,0 +1,14 @@
+apiVersion: v1alpha1
+kind: ComponentConfig
+metadata:
+  name: ts-assurance-service
+  projectName: train-ticket
+  annotations:
+    componentType: service
+spec:
+  inbound:
+  - name: ts-assurance-service
+    port: 9095
+    type: REST
+    visibility: Organization
+    context: /
