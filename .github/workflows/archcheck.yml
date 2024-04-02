@@ -29,5 +29,5 @@ jobs:
         
     - name: Run Conformance Check
       working-directory: archcheck-1.0-SNAPSHOT
-      run: ./archcheck --intended ../docs/architecture.drawio --modified .
+      run: ./archcheck --intended ../docs/architecture.drawio --modified ../
         
