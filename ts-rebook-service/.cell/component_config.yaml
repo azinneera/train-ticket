@@ -44,6 +44,6 @@ spec:
     - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-order-other-service/public
       dependentConfig: config-10
       connectionType: service 
-    - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-payment-service/public
+    - name: choreo:///asmaj/lpar/auvzlk/40c92b81-2ddd-4933-9422-a920b7e27736/v1.0/ts-inside-payment-service/public
       dependentConfig: config-11
       connectionType: service 
